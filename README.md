@@ -11,7 +11,7 @@ require('cheader')
 ## Usage
 Invoke `:Cheader` inside `.h` file and it will generate something like this:
 ```c
-// #define README_IMPLEMENTATION
+//  #define README_IMPLEMENTATION
 #ifndef    _README_H_
 #define    _README_H_
 // readme interface
@@ -30,7 +30,7 @@ Invoke `:Cheader` inside `.h` file and it will generate something like this:
 note that I ran `:Cheader` in `README.md` to show how it works.
 You can also override name used by passing it. E.G. running `:Cheader special$cryptic.lib-name#1`
 ```c
-// #define SPECIAL_CRYPTIC_LIB_NAME_1_IMPLEMENTATION
+//  #define SPECIAL_CRYPTIC_LIB_NAME_1_IMPLEMENTATION
 #ifndef    _SPECIAL_CRYPTIC_LIB_NAME_1_H_
 #define    _SPECIAL_CRYPTIC_LIB_NAME_1_H_
 // special_cryptic_lib_name_1 interface
