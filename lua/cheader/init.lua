@@ -12,6 +12,7 @@ vim.api.nvim_create_user_command("Cheader", function(opts)
   insert( 
     '#ifdef    MONO_BUILD\n'..
     '#define '..the_file..'_IMPLEMENTATION\n'..
+    '#undef    MONO_BUILD\n'..
     '#endif // MONO_BUILD\n'..
     '#ifndef    _'..the_file..'_H_\n'..
     '#define    _'..the_file..'_H_\n'..
