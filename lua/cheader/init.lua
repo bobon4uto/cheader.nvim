@@ -10,10 +10,10 @@ end
 vim.api.nvim_create_user_command("Cheader", function(opts)
   local the_file = (opts.fargs[1] or vim.fn.expand("%:t:r")):upper():gsub("[^%w]", "_")
   insert( 
-    '#ifdef    MONO_BUILD\n'..
+    '#ifdef    DEFINE_IMPLEMENTATION\n'..
     '#define '..the_file..'_IMPLEMENTATION\n'..
-    '#undef    MONO_BUILD\n'..
-    '#endif // MONO_BUILD\n'..
+    '#undef    DEFINE_IMPLEMENTATION\n'..
+    '#endif // DEFINE_IMPLEMENTATION\n'..
     '#ifndef    _'..the_file..'_H_\n'..
     '#define    _'..the_file..'_H_\n'..
     '// '..the_file:lower()..' interface\n'..
